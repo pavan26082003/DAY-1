@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Form Example</title>
+</head>
+<body>
+  <h2>User Registration Form</h2>
+  <form action="/submit" autocapitalize="on"  method="POST">
+    
+    <!-- Text input -->
+    <label for="name" aria-label="Name" >Full Name:</label><br>
+    <input type="text"  aria-label="Name"  value="pavan" disabled readonly id="name" name="fullname" required minlength="5"><br><br>
+    
+    
+    <!-- Email input -->
+    <label for="email">Email:</label><br>
+    <input type="email"  aria-label="Name" id="email" name="email" required><br><br>
+    
+    <!-- Password input -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" maxlength="6" required><br><br>
+    
+    <!-- Radio buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <!-- Checkbox -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobbies" value="Reading">
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="coding" name="hobbies" value="Coding">
+    <label for="coding">Coding</label><br><br>
+    
+    <!-- Select Dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country"  name="country">
+      <option value="">--Select--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option  value="uk">UK</option>
+    </select><br><br>
+    
+
+<fieldset>
+  <legend>Personal Info</legend>
+  <input type="text" name="fname">
+</fieldset>
+
+    <!-- Textarea -->
+    <label for="about">About You:</label><br>
+    <textarea id="about" name="about" rows="4" cols="30" placeholder="Tell something about yourself"></textarea><br><br>
+    
+    <!-- File Upload -->
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" id="resume" name="resume"><br><br>
+    
+    <!-- Submit and Reset -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+    
+  </form>
+</body>
+</html>
+

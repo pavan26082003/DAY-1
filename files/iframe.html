@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- Comprehensive iframe example demonstrating key attributes -->
+
+    <iframe
+  src="https://www.youtube.com/embed/lZkmGGKkkEw?si=Vk0pJ4bHn_pODEX-"
+  width="360"
+  height="200"
+  title="YouTube video player - Example Video"
+  name="exampleVideoPlayer"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+  loading="lazy"
+  sandbox="allow-scripts allow-same-origin"
+  referrerpolicy="strict-origin-when-cross-origin"
+  style="border: 2px solid #ccc; border-radius: 8px;"
+></iframe>
+
+
+
+<object data="https://www.youtube.com/embed/lZkmGGKkkEw?si=Vk0pJ4bHn_pODEX-" width="360" height="400"></object>
+
+<embed src="https://www.youtube.com/embed/lZkmGGKkkEw?si=Vk0pJ4bHn_pODEX-" width="360" height="400"></embed>
+
+<div id="container">
+
+</div>
+
+
+
+<script>
+    fetch('https://www.w3schools.com/tags/tag_iframe.ASP')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('container').innerHTML = html;
+  });
+
+
+
+</script>
+</body>
+</html>
