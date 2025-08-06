@@ -10,10 +10,8 @@ button {
 }
 
 .form-container {
-
   display: flex;
   flex-direction: column;
-  
   position: relative;
   width: 100%;
   height: 100vh;
@@ -23,11 +21,9 @@ button {
 
   color: wheat;
 
-  display: flex;
-  justify-content: center;
   z-index: 22;
 
-  width: 30%;
+  width: 50%;
   height: auto;
   padding: 10px;
   margin-left: 30%;
@@ -59,3 +55,4 @@ iframe {
   position: absolute;
   width: 90%;
 }
+
